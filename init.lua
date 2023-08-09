@@ -285,8 +285,14 @@ vim.keymap.set('n', '<leader>sf', function()
   })
 end, { desc = '[S]earch [F]uzzily?' })
 
+-- Comment.nvim remaps
+local comment_api = require("Comment.api")
+
+vim.keymap.set('n', '<leader>/', comment_api.toggle.linewise.current, { desc = '[/] Comment line' })
+vim.keymap.set('v', '<leader>/b', comment_api.toggle.blockwise.current, { desc = '[b] Comment block' })
+
 -- [[ Configure Treesitter ]]
--- See `:help nvim-treesitter`
+-- See `help nvim-treesitter`
 require('nvim-treesitter.configs').setup {
   -- Add languages to be installed here that you want installed for treesitter
   ensure_installed = { 'c', 'cpp', 'go', 'lua', 'python', 'rust', 'tsx', 'typescript', 'vimdoc', 'vim' },
