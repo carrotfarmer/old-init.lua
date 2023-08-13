@@ -419,11 +419,11 @@ end
 --  define the property 'filetypes' to the map in question.
 local servers = {
   -- clangd = {},
-  -- gopls = {},
+  gopls = { filetypes = { 'gohtmltmpl' } },
   -- pyright = {},
   -- rust_analyzer = {},
   tsserver = {},
-  -- html = { filetypes = { 'html', 'twig', 'hbs'} },
+  html = { filetypes = { 'html', 'twig', 'hbs', "gohtmltmpl" } },
 
   lua_ls = {
     Lua = {
@@ -431,6 +431,8 @@ local servers = {
       telemetry = { enable = false },
     },
   },
+
+  tailwindcss = { filetypes = { "tmpl", "html" } }
 }
 
 -- Setup neovim lua configuration
