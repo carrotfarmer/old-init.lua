@@ -1,0 +1,14 @@
+{
+  "TypeGraphQL Resolver": {
+    "prefix": "rsv",
+    "body": [
+      "import { Resolver } from \"type-graphql\";",
+      "",
+      "@Resolver()",
+      "export class $1Resolver {",
+      "\t@$2",
+      "\tasync $3() {}",
+      "}"
+    ]
+  }
+}

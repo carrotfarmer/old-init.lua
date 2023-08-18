@@ -1,0 +1,22 @@
+{
+  "name": "carrot-snippets",
+  "description": "my vim snippets",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.64.0"
+  },
+  "contributes": {
+    "snippets": [
+      {
+        "language": "typescriptreact",
+        "path": "./typescriptreact.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./typescript.json"
+      }
+    ]
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
