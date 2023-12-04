@@ -47,7 +47,7 @@ return {
         -- Tsserver usually works poorly. Sorry you work with bad languages
         -- You can remove this line if you know what you're doing :)
         -- if client.name == 'tsserver' then
-        --   return
+        --  return
         -- end
 
         -- Create an autocmd that will run *before* we save the buffer.

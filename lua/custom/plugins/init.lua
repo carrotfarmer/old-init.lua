@@ -9,4 +9,5 @@ return {
 	"dag/vim-fish",
 	"fatih/vim-go",
 	"prisma/vim-prisma",
+	"evanleck/vim-svelte",
 }

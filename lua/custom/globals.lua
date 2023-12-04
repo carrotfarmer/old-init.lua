@@ -52,3 +52,6 @@ vim.o.relativenumber = true
 -- 2 spaces for tab imagine using 4
 vim.o.tabstop = 2
 vim.o.shiftwidth = 2
+
+-- omg
+vim.o.expandtab = true
